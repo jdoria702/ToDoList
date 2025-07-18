@@ -3,3 +3,103 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: white;
+  display: flex;
+}
+
+.profile-picture {
+  width: 40px;
+  border-radius: 50px;
+}
+
+.icon {
+  width: 25px;
+}
+
+.sidebar {
+  background-color: hsl(2, 95%, 93%);
+  height: 100vh;
+  width: 250px;
+  padding: 24px 16px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.projects {
+  margin-top: 24px;
+}
+
+#new-project {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  border-radius: 20px;
+  padding: 12px 0;
+}
+
+#new-project:hover {
+  cursor: pointer;
+  background-color: hsl(3, 100%, 89%);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.project-list {
+  margin-top: 12px;
+}
+
+.project-list p {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.514);
+}
+
+.project-list ul {
+  margin-top: 8px;
+  padding: 0px 4px;
+  list-style-type: none;
+}
+
+li {
+  border-radius: 8px;
+  padding: 4px 0;
+}
+
+li:hover {
+  cursor: pointer;
+  background-color: hsl(3, 100%, 89%);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.todo {
+  flex: auto;
+  padding: 80px 40px;
+  background-color: hsl(23, 100%, 96%);
+}
+
+.start-page {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.start-page h1 {
+  font-size: 48px;
+  border-bottom: 1px solid hsl(23, 13%, 75%);
+}
+
+.start-page p {
+  font-size: 24px;
+}
