@@ -8,6 +8,20 @@ projects.forEach((project) => {
   });
 });
 
+const projectDialog = document.getElementById("project-dialog");
+const newProjectBtn = document.getElementById("new-project");
+const projectForm = projectDialog.querySelector("form");
+
+newProjectBtn.addEventListener("click", () => {
+  projectDialog.showModal();
+});
+
+projectForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const projectTitle = projectForm.project - title;
+});
+
 document.addEventListener("DOMContentLoaded", () => {
   loadStart();
 });
